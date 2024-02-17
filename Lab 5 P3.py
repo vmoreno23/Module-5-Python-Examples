@@ -5,17 +5,17 @@ color_fill = input("Enter a color to fill polygon: ")
 
 import turtle
 wn = turtle.Screen()
-drawing = turtle.Turtle()
+drawing = turtle.Turtle() #defines cursor 
 drawing.color(color)
 drawing.fillcolor(color_fill)
 
-drawing.begin_fill()
+drawing.begin_fill() #starts the fill process
 
 for i in range(sides_number):
     drawing.forward(sides_length)
     drawing.left(360 / sides_number)
 
-drawing.end_fill()
+drawing.end_fill() #ends fill process
 
 #Victor Moreno
 #2/16/24
